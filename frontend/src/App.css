@@ -344,3 +344,62 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.25);
   background: #fff1e0;
 }
+/* --- Edit / Cancel Buttons --- */
+.note-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.cancel-btn {
+  align-self: flex-start;
+  background: linear-gradient(135deg, #d46a42, #b55234);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #b55234, #913f26);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.cancel-btn {
+  background: #b0a8a8;
+}
+
+.cancel-btn:hover {
+  background: linear-gradient(135deg, #818080, #292828);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* --- Tag Filter --- */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tag-filter {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #bfa98a;
+  background: #fffaf3;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #3b2b1c;
+  transition: all 0.3s ease;
+}
+
+.tag-filter:hover {
+  border-color: #a47d45;
+  box-shadow: 0 0 6px rgba(164, 125, 69, 0.3);
+}
